@@ -1,0 +1,11 @@
+@keyframes FeedUp {
+    0% {
+        transform: translateX(-50%) translateY(100%);
+    }
+    100% {
+        transform: translateX(-50%) translateY(-50%);
+    }
+}
+.animation {
+    animation: FeedUp 0.4s ease;
+}
