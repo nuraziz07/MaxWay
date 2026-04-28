@@ -41,7 +41,7 @@ const Search = () => {
 
                 <div
                     className={
-                        'relative transition-all z-1000 cursor-pointer ease-in duration-170 active:scale-85'
+                        'relative transition-all z-1000 items-center cursor-pointer ease-in duration-170 active:scale-85'
                     }
                     onClick={() => navigate('/basket')}
                 >
