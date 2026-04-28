@@ -16,7 +16,7 @@ const Page2 = () => {
         <div className={'container_mobile w-full justify-center flex'}>
             {filtered.map((item, index) => {
                 return (
-                    <div key={index} className={'pt-20'}>
+                    <div key={index} className={'pt-14'}>
                         <img
                             className={
                                 'rounded-[30px]   transition-all w-full justify-center flex ease-in duration-230 hover:scale-102 h-[250px]'
