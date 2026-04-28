@@ -55,7 +55,7 @@ const FoodItem = () => {
                                     dispatch({ type: 'plus', payload: item })
                                 }
                                 className={
-                                    'relative transition-all ease-in duration-170 active:scale-85 cursor-pointer hover:bg-[#d59c28] left-21 sm:left-34 sm:top-1 p-2 bg-[#FFA800] text-white rounded-[50%]'
+                                    'relative transition-all ease-in duration-170 active:scale-85 cursor-pointer hover:bg-[#d59c28] left-25 sm:left-34 sm:top-1 p-2 bg-[#FFA800] text-white rounded-[50%]'
                                 }
                                 size={35}
                             />
