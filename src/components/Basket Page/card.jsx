@@ -39,7 +39,7 @@ const Card = () => {
                         </div>
                         <div
                             className={
-                                'flex relative top-1 justify-end pl-5 items-center gap-2 '
+                                'flex relative top-1 justify-end pl-2 items-center gap-2 '
                             }
                         >
                             <button
