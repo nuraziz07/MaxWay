@@ -1,14 +1,11 @@
 import React from 'react';
-import Beef from "../../assets/png/beef.jpg";
-import {Minus, Plus} from "lucide-react";
-import Card from "./card.jsx";
+import Card from './card.jsx';
 
 const Item = () => {
-
     return (
-       <>
-               <Card />
-       </>
+        <>
+            <Card />
+        </>
     );
 };
 

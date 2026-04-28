@@ -1,20 +1,19 @@
 html {
-  scroll-behavior: smooth;
-  animation: opavity 0.5s ease-in-out;
+    scroll-behavior: smooth;
+    animation: opavity 0.5s ease-in-out;
 }
 
-
 .container_mobile {
-  max-width: 546px;
-  margin: 0 auto;
-  padding: 0 15px;
+    max-width: 430px;
+    margin: 0 auto;
+    padding: 0;
 }
 
 @keyframes opavity {
-  0% {
-    opacity: 0.1;
-  }
-  100% {
-    opacity: 1;
-  }
+    0% {
+        opacity: 0.1;
+    }
+    100% {
+        opacity: 1;
+    }
 }
