@@ -17,12 +17,12 @@ const Search = () => {
     return (
         <div
             className={
-                'sm:w-full bg-white z-2000 flex items-center h-[10vh] justify-center fixed top-0'
+                'sm:w-full bg-white z-2000 flex items-center shadow-md shadow-grey-400 rounded-b-[50px] h-[10vh] justify-center fixed top-0'
             }
         >
             <div
                 className={
-                    'flex justify-space-between w-full px-8 pt-2  pb-4 gap-10'
+                    'flex justify-space-between w-full px-8 pt-4  pb-4 gap-10'
                 }
             >
                 <ArrowLeft
