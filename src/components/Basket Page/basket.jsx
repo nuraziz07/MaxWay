@@ -12,7 +12,7 @@ const Basket = () => {
 
     return (
         <div className={'container_mobile'}>
-            <div>
+            <div className={'pt-17'}>
                 <h1
                     className={
                         'text-black text-center font-[700] pb-6 w-full text-[22px]'
