@@ -15,7 +15,7 @@ const Search = () => {
     let sum = quantity.reduce((sum, cur) => sum + cur, 0);
 
     return (
-        <div className={'sm:w-full bg-white fixed top-0'}>
+        <div className={'sm:w-full bg-white flex justify-center fixed top-0'}>
             <div
                 className={
                     'flex justify-space-between w-full px-8 pt-2 border-b border-gray-400 pb-5 gap-10'
@@ -41,7 +41,7 @@ const Search = () => {
 
                 <div
                     className={
-                        'relative transition-all cursor-pointer ease-in duration-170 active:scale-85'
+                        'relative transition-all z-1000 cursor-pointer ease-in duration-170 active:scale-85'
                     }
                     onClick={() => navigate('/basket')}
                 >
