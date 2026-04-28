@@ -20,13 +20,14 @@ const FoodItem = () => {
     return (
         <>
             {filteredData.map((item, index) => {
-                const finding = filteredData.find((c) => c.id === item.id);
+                const finding = state.userCard.find((c) => c.id === item.id);
 
                 const check = finding ? finding.quantity : 0;
+
                 return (
                     <div
                         key={index}
-                        className={`w-full  ${check ? 'border border-yellow-500' : 'shadow-lg shadow-gray-300'}   transition-all ease-in duration-170 hover:scale-102 rounded-[20px]  gap-4 flex`}
+                        className={`w-full  ${check ? 'border-[2px] border-[#FFA800]' : 'shadow-lg shadow-gray-300'}   transition-all ease-in duration-170 hover:scale-102 rounded-[20px]  gap-4 flex`}
                     >
                         <div onClick={() => navigate(`/detail/${item.id}`)}>
                             <img
@@ -58,7 +59,7 @@ const FoodItem = () => {
                                 <button
                                     onClick={() =>
                                         dispatch({
-                                            type: 'minus',
+                                            type: 'decrement',
                                             payload: item,
                                         })
                                     }

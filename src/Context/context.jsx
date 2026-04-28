@@ -58,6 +58,20 @@ const reducer = (state = initialValue, action) => {
                 ),
             };
         }
+        case 'decrement': {
+            return {
+                ...state,
+                userCard: state.userCard.map((item) =>
+                    item.id === payload.id
+                        ? {
+                              ...item,
+                              quantity:
+                                  item.quantity > 0 ? item.quantity - 1 : 0,
+                          }
+                        : item
+                ),
+            };
+        }
         case 'reset': {
             return {
                 ...state,
