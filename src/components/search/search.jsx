@@ -17,7 +17,7 @@ const Search = () => {
     return (
         <div
             className={
-                'sm:w-full bg-white z-2000 flex items-center shadow-md shadow-grey-400 rounded-b-[50px] h-[10vh] justify-center fixed top-0'
+                'sm:w-full bg-white z-2000 flex items-center shadow-md shadow-grey-400 rounded-b-[20px] h-[10vh] justify-center fixed top-0'
             }
         >
             <div
