@@ -18,7 +18,7 @@ const Card = () => {
                     >
                         <img
                             src={item.img}
-                            className={'w-[125px] h-full rounded-[12px]'}
+                            className={'w-[125px] h-[105px] rounded-[12px]'}
                             alt="Beef Burger"
                         />
                         <div className={'pt-4'}>
@@ -39,7 +39,7 @@ const Card = () => {
                         </div>
                         <div
                             className={
-                                'flex relative top-1 justify-end pl-2 items-center gap-2 '
+                                'flex relative top-1 justify-end pr-2 ml-5 items-center gap-2 '
                             }
                         >
                             <button

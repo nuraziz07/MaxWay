@@ -1,6 +1,6 @@
 import React, { useContext, useMemo } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Plus } from 'lucide-react';
+import { Minus, Plus } from 'lucide-react';
 import { Context } from '/src/Context/context.jsx';
 import { products } from '@/hooks/products.js';
 const FoodItem = () => {
@@ -26,16 +26,16 @@ const FoodItem = () => {
                 return (
                     <div
                         key={index}
-                        className={`w-full  ${check > 1 ? 'border border-yellow-500' : 'border border-gray-300'}   transition-all ease-in duration-170 hover:scale-102 rounded-[20px]  gap-4 flex`}
+                        className={`w-full  ${check ? 'border border-yellow-500' : 'shadow-lg shadow-gray-300'}   transition-all ease-in duration-170 hover:scale-102 rounded-[20px]  gap-4 flex`}
                     >
                         <div onClick={() => navigate(`/detail/${item.id}`)}>
                             <img
                                 src={item.img}
-                                className={'rounded-[20px] h-full w-[132px]'}
+                                className={'rounded-[20px] h-[131px] w-[152px]'}
                                 alt=""
                             />
                         </div>
-                        <div className={'pt-9'}>
+                        <div className={'pt-2'}>
                             <h3
                                 className={
                                     'text-black  font-[700] text-[17px] sm:text-[23px] pr-2 leading-6'
@@ -50,15 +50,39 @@ const FoodItem = () => {
                             >
                                 R.p {item.price}
                             </h5>
-                            <Plus
-                                onClick={() =>
-                                    dispatch({ type: 'plus', payload: item })
-                                }
+                            <div
                                 className={
-                                    'relative transition-all ease-in duration-170 active:scale-85 cursor-pointer hover:bg-[#d59c28] left-25 sm:left-34 sm:top-1 p-2 bg-[#FFA800] text-white rounded-[50%]'
+                                    'flex relative ml-15 px-3 py-1 rounded-[30px] justify-end top-6 bg-white shadow-md shadow-gray-300  items-center gap-2 '
                                 }
-                                size={35}
-                            />
+                            >
+                                <button
+                                    onClick={() =>
+                                        dispatch({
+                                            type: 'minus',
+                                            payload: item,
+                                        })
+                                    }
+                                    className={
+                                        'bg-[#FFA800] transition-all ease-in duration-270 active:scale-37 text-white rounded-[50%] p-1'
+                                    }
+                                >
+                                    <Minus size={18} />
+                                </button>
+                                <h5 className={'text-[14px]'}>{check}</h5>
+                                <button
+                                    onClick={() =>
+                                        dispatch({
+                                            type: 'plus',
+                                            payload: item,
+                                        })
+                                    }
+                                    className={
+                                        'bg-[#FFA800] transition-all ease-in duration-270 active:scale-37 text-white rounded-[50%] p-1'
+                                    }
+                                >
+                                    <Plus size={18} />
+                                </button>
+                            </div>
                         </div>
                     </div>
                 );
