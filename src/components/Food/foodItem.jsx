@@ -26,7 +26,7 @@ const FoodItem = () => {
                 return (
                     <div
                         key={index}
-                        className={`w-full pr-20 ${check > 1 ? 'border border-yellow-500' : 'border border-gray-300'}   transition-all ease-in duration-170 hover:scale-102 rounded-[20px]  gap-10 flex`}
+                        className={`w-full  ${check > 1 ? 'border border-yellow-500' : 'border border-gray-300'}   transition-all ease-in duration-170 hover:scale-102 rounded-[20px]  gap-10 flex`}
                     >
                         <div onClick={() => navigate(`/detail/${item.id}`)}>
                             <img
