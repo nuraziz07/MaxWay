@@ -15,7 +15,7 @@ const Search = () => {
     let sum = quantity.reduce((sum, cur) => sum + cur, 0);
 
     return (
-        <div className={'sm:w-full'}>
+        <div className={'sm:w-full fixed top-0'}>
             <div
                 className={
                     'flex justify-space-between w-full px-8 pt-8 border-b border-gray-400 pb-5 gap-10'
